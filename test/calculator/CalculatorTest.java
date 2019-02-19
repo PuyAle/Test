@@ -31,22 +31,10 @@ public class CalculatorTest {
 
     }
 
-    @Test(expected = AssertionError.class)
-    public void testFailAdd() {
-        int result = c.add(1, 1);
-        assertEquals(1, result);
-    }
-
     @Test
     public void testSub() {
         int result = c.sub(2, 1);
         assertEquals(1, result);
-    }
-
-    @Test(expected = AssertionError.class)
-    public void testFailSub() {
-        int result = c.sub(2, 1);
-        assertEquals(0, result);
     }
 
     @Test
@@ -66,13 +54,6 @@ public class CalculatorTest {
     public void testDiv() {
         int result = c.div(2, 1);
         assertEquals(2, result);
-    }
-
-    @Test//(expected = AssertionError.class)
-    public void testFailDiv() {
-        int result = c.div(2, 1);
-        //assertEquals(1, result);
-        //assertNotEquals(1, result);
     }
 
     @Test(expected = ArithmeticException.class)
